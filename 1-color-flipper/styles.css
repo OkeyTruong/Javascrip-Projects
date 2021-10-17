@@ -1,0 +1,113 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --clr-bg:#f1f5f8;
+    --clr-bg-nav:#fff;
+    --clr-primary:#49a6e9;
+    --clr-primary-text:#063251;
+    --clr-bg-center:#222222;
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--clr-bg);
+    color: #102a42;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+.nav-link:hover{
+    color:var(--clr-primary)
+}
+.btn-hero:hover{
+    color:var(--clr-bg);
+    background-color: var(--clr-bg-center)
+}
+
+
+main{
+    display:block;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-center{
+    display: flex;
+    width: 100%;
+    padding: 0 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 48px;
+    box-shadow: var(--dark-shadow);
+    background-color: var(--clr-bg-nav);
+
+}
+.nav-center h4{
+    font-size: 16px;
+    font-weight:700;    
+    line-height: 1;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    color:var(--clr-primary);
+}
+.nav-links{
+    display:flex;
+    list-style-type: none;
+}
+
+.nav-link{
+    font-size:16px;
+    font-weight: 700;
+    color:var(--clr-primary-text);
+    letter-spacing: 4px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.container{
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width:632.5px;
+    height: 159.2px;
+    text-align: center;
+}
+
+.content h2{
+    background: var(--clr-bg-center);
+    color: var(--clr-bg);
+    padding: 6px;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+    font-size:43px;
+    font-weight: 700;
+}
+
+.color{
+    color: var(--clr-primary);
+    display: block;
+}
+
+.btn{
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    padding:12px 20px;
+    border: 2px solid var(--clr-bg-center);
+    border-radius: 10px;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
