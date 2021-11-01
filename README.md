@@ -1,7 +1,8 @@
 # Build Javascript Projects
+1.Color Flipper
+![Color-Flipper-Awesome-Screenshot](https://user-images.githubusercontent.com/75199998/139657335-2ef5f0ba-9d53-4b10-951a-f9c95b7c05c9.gif)
+
 
 Simple Counter 
 
-
-https://user-images.githubusercontent.com/75199998/139656613-45128b79-896d-4a47-a738-a9829d712a60.mp4
-
+![Count-Awesome-Screenshot](https://user-images.githubusercontent.com/75199998/139657159-7bcb9df9-234f-451c-8ad8-3d35ffddcbe9.gif)
