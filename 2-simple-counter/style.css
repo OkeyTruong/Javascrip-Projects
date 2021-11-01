@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+:root{
+    --color-primary: #f1f5f8;
+    --color-primary-1: #102a42;
+    --color-primary-2: #222;
+    --color-primary-3: #fff;
+    --ff-primary: "Roboto", sans-serif; 
+    --ff-secondary: "Open Sans", sans-serif;
+    
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    background: #f5f5f5;
+}
+#main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    text-align: center;
+}
+.container .title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-primary-1);
+    margin-bottom: 1rem;
+    letter-spacing: 5px;
+}
+.container #value{
+    font-size: 6rem;
+    font-weight:600;
+    color: var(--color-primary-1);
+    margin-bottom: 1rem;
+}
+.container .button-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.button-container .btn{
+    margin: 0.5rem;
+    padding: 6px 12px;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.button-container .btn:hover{
+    background: var(--color-primary-2);
+    color: #fff;
+}
