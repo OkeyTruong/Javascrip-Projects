@@ -12,24 +12,6 @@ let currentItem = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
     showPerson(currentItem)
-    prevBtn.addEventListener('click', () => {
-        currentItem--;
-        if(currentItem < 0){
-            currentItem = reviews.length - 1;
-        }
-        showPerson(currentItem)
-    })
-    nextBtn.addEventListener('click', () => {
-        currentItem++;
-        if(currentItem > reviews.length - 1){
-            currentItem = 0;
-        }
-        showPerson(currentItem)
-    })
-    randomBtn.addEventListener('click', () => {
-        currentItem = Math.floor(Math.random() * reviews.length);
-        showPerson(currentItem);
-    })
 })
 
 const showPerson = (person) => {
@@ -39,3 +21,21 @@ const showPerson = (person) => {
     job.textContent = item.job;
     info.textContent = item.text;
 }
+prevBtn.addEventListener('click', () => {
+    currentItem--;
+    if(currentItem < 0){
+        currentItem = reviews.length - 1;
+    }
+    showPerson(currentItem)
+})
+nextBtn.addEventListener('click', () => {
+    currentItem++;
+    if(currentItem > reviews.length - 1){
+        currentItem = 0;
+    }
+    showPerson(currentItem)
+})
+randomBtn.addEventListener('click', () => {
+    currentItem = Math.floor(Math.random() * reviews.length);
+    showPerson(currentItem);
+})
