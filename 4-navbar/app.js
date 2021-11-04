@@ -1,11 +1,13 @@
-const navToggle = document.querySelector('.nav-toggle');
-const links = document.querySelector('.links');
+const navToggleBtn = document.querySelector('.nav-toggle');
+const links = document.querySelector(".links");
 
-navToggle.addEventListener('click', () => {
-    // if(links.classList.contains('show-links')) {
-        // links.classList.remove("show-links")
+navToggleBtn.addEventListener("click",()=>{
+    // console.log(links.classList)
+    const currentClass = links.classList;
+    // if(currentClass.contains("show-links")){
+    //     links.classList.remove("show-links");
     // }else{
-        // links.classList.add("show-links")
+    //     links.classList.add("show-links");
     // }
-    links.classList.toggle('show-links');
+    currentClass.toggle("show-links");
 })
