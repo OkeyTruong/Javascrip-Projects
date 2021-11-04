@@ -15,3 +15,6 @@ Reviews
 Navbar (Toggle)
 
 ![Navbar-Awesome-Screenshot](https://user-images.githubusercontent.com/75199998/140043142-667b671c-76d4-4a17-8120-0188f5074a82.gif)
+
+Sidebar (Toggle)
+
