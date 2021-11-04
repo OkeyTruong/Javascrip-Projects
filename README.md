@@ -18,3 +18,4 @@ Navbar (Toggle)
 
 Sidebar (Toggle)
 
+![Sidebar-Awesome-Screenshot](https://user-images.githubusercontent.com/75199998/140291404-fedd4635-dca1-40b4-ba96-ecb7c3df3228.gif)
