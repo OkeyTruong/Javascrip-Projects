@@ -1,15 +1,10 @@
-
-const modal = document.querySelector(".modal-overlay")
 const openModal = document.querySelector(".modal-btn")
-const closeModal = document.querySelector(".close-btn")
-
-let currentClass = modal.classList;
+const closeBtn = document.querySelector(".close-btn")
+const modal = document.querySelector(".modal-overlay")
 
 openModal.addEventListener("click", ()=>{
-    // currentClass.add("open-modal")
-    currentClass.toggle("open-modal")
+    modal.classList.toggle("open-modal")
 })
-closeModal.addEventListener("click", ()=>{
-    // currentClass.remove("open-modal")
-    currentClass.toggle("open-modal")  
+closeBtn.addEventListener("click", ()=>{
+    modal.classList.toggle("open-modal")
 })
