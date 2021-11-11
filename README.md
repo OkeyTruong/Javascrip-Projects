@@ -19,3 +19,11 @@ Navbar (Toggle)
 Sidebar (Toggle)
 
 ![Sidebar-Awesome-Screenshot](https://user-images.githubusercontent.com/75199998/140291404-fedd4635-dca1-40b4-ba96-ecb7c3df3228.gif)
+
+Modal
+
+![Modal-Awesome-Screenshot](https://user-images.githubusercontent.com/75199998/141057152-1121bf0c-843f-4139-9425-da1ba715e39e.gif)
+
+Questions
+
+![Q-_-A-Awesome-Screenshot](https://user-images.githubusercontent.com/75199998/141057185-6ca6ce33-343a-4b26-9303-e24d7bf0b1fc.gif)
