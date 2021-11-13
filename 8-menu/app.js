@@ -1,59 +1,51 @@
-const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
 
-window.addEventListener('DOMContentLoaded', () => {
-    displayMenu(menu);
-    const categories = menu.reduce((acc, item) => {
-        if(!acc.includes(item.category)){
-           acc.push(item.category);
+window.addEventListener("DOMContentLoaded",()=>{
+    const categories = menu.reduce((value, item) =>{
+        if(!value.includes(item.category)){
+            value.push(item.category);
         }
-        return acc;
+        return value;
     },["all"])
-    // console.log(categories);
-    displayFitlterBtn(categories);
+    displayBtnCategory(categories)
+    displayMenu(menu)
+
 })
 
-
-const displayFitlterBtn = (categories) => {
-    let categorybtns = categories.map(category => {
-        return`
-       <button class="filter-btn" type="button" data-id="${category}">${category}</button>`
-    })
-    btnContainer.innerHTML = categorybtns.join('');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    // console.log(filterBtns)
+const displayBtnCategory = (categories) => {
+    const btn = categories.map(category => {
+        return `<button class="filter-btn" type="button" data-id="${category}">${category}</button>`
+    }) 
+    // console.log(btn)
+    btnContainer.innerHTML = btn.join("")
+    const filterBtns = btnContainer.querySelectorAll('.filter-btn')
     filterBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            let currentCategory = e.target.dataset.id;
-            let menuCategory = menu.filter(item => {
-                if(item.category === currentCategory){
-                    return item;
-                }
-            });
-            if(currentCategory === 'all'){
-                displayMenu(menu);
-            }else{
-                displayMenu(menuCategory);
-            }
+        btn.addEventListener('click', ()=>{
+            const id = btn.dataset.id;
+            const menuItems = menu.filter(item => item.category === id)
+            console.log(menuItems)
+           if(id === "all"){
+               displayMenu(menu)
+           }else{
+               displayMenu(menuItems)
+           }
         })
     })
 }
 
-
-const displayMenu = (menu) => {
-   let menuItems = menu.map(item=>{
-       return`
-       <active class="menu-item">
-       <img src="${item.img}" class= "photo" alt="${item.title}">
-       <div class="item-info">
-           <header>
-               <h4>${item.title}</h4>
-               <h4 class="price">${item.price}</h4>
-           </header>
-           <p class="item-text">
-            ${item.desc}
-       </div>
-   </active> `
-   })
-   sectionCenter.innerHTML = menuItems.join('');
+const sectionCenter = document.querySelector('.section-center');
+const displayMenu = (menu) =>{
+    const menuItems = menu.map(item => {
+        return `<article class="menu-item">
+        <img src="${item.img}" alt="${item.title}" class="photo" />
+        <div class="item-info">
+          <header>
+            <h4>${item.title}</h4>
+            <h4 class="price">$${item.price}</h4>
+          </header>
+          <p class="item-text">${item.desc}</p>
+        </div>
+      </article>`
+    })
+    sectionCenter.innerHTML = menuItems.join("")
 }
