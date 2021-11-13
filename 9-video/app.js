@@ -1,18 +1,17 @@
-const btn = document.querySelector(".switch-btn")
-const video = document.querySelector(".video-container")
-const preloader = document.querySelector(".preloader")
-
-btn.addEventListener("click", ()=>{
-    if(!btn.classList.contains("slide")){
-        btn.classList.add("slide")
-        video.pause()
+const switchBtn = document.querySelector('.switch-btn');
+const video = document.querySelector('.video-container');
+switchBtn.addEventListener('click', () => {
+    if(switchBtn.classList.contains("slide")){
+        switchBtn.classList.remove("slide");
+        video.play();    
     }else{
-        btn.classList.remove("slide")
-        video.play()
+        switchBtn.classList.add("slide");
+        video.pause();    
     }
 })
 
-window.addEventListener("load",() =>{
-    preloader.classList.add("hide-preloader")
-})
+const preloader = document.querySelector('.preloader');
 
+window.addEventListener('load', () => {
+    preloader.classList.add("hide-preloader"); 
+});
