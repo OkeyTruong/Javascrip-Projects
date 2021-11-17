@@ -1,17 +1,16 @@
-// const questions = document.querySelectorAll('.question');
+// const questions = document.querySelectorAll(".question")
 
-// questions.forEach(question => {
-//     const btn = question.querySelector('.question-btn');
-//     btn.addEventListener("click",()=>{
+// questions.forEach(question =>{
+//     const btn = question.querySelector(".question-btn")
+//     btn.addEventListener("click",(e)=>{
 //         question.classList.toggle('show-text');
 //     })
 // })
+const btns = document.querySelectorAll(".question-btn")
 
-const btns = document.querySelectorAll('.question-btn');
-
-btns.forEach(btn => {
+btns.forEach(btn=>{
     btn.addEventListener("click",(e)=>{
-        let currentClass = btn.parentElement.parentElement;
-        currentClass.classList.toggle('show-text');
+        const element = btn.parentElement.parentElement;
+        element.classList.toggle("show-text")
     })
 })

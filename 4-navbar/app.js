@@ -1,12 +1,12 @@
-const links = document.querySelector('.links');
-const navToggleBtn = document.querySelector(".nav-toggle")
+const btn = document.querySelector('.nav-toggle');
+const links = document.querySelector(".links")
 
-navToggleBtn.addEventListener('click', ()=>{
-    let currentClass = links.classList
-    // if (currentClass.contains("show-links")){
-    //     currentClass.remove("show-links")   
+btn.addEventListener("click",()=>{
+    const currentClass = links.classList
+    // if(currentClass.contains("show-links")){
+    //     currentClass.remove("show-links")
     // }else{
-    //     currentClass.add("show-links");
+    //     currentClass.add("show-links")
     // }
     currentClass.toggle("show-links")
 })
